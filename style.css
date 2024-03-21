@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Edu SA Beginner", cursive;
+}
+#map { 
+    height: 100vh; 
+}
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  left: 20px;
+  top: 0;
+  height: 100vh;
+  z-index: 1000;
+}
+.sidebar {
+  background: rgba(26, 25, 23, 0.503);
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 250px;
+  margin-top: 80px;
+  margin-bottom: 10px;
+  color: white;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.sidebar:hover {
+  background: rgba(26, 25, 23);
+  cursor: pointer;
+}
+.sidebar h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  background-color: rgb(78, 75, 75);
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 25px;
+}
+/* form alanı */
+form {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+}
+form .field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+form .field input,
+select {
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 15px;
+}
+form button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(166, 166, 47);
+  font-weight: bold;
+  transition: ease-in-out 0.5s;
+}
+form button:hover{
+    transform: scale(1.2);
+}
+/* liste elemanları */
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 15px;
+  margin-top: 10px;
+  white-space: nowrap;
+  overflow: auto;
+  height: 100%;
+  padding: 10px;
+}
+ul::-webkit-scrollbar{
+    background-color: black;
+    border-radius: 10px;
+    width: 12.5px;
+}
+ul::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: 10px;
+}
+li {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(86, 83, 79);
+  align-items: center;
+  padding: 10px 1px;
+  position: relative;
+  border-radius: 10px;
+  
+}
+li div{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1px;
+  
+  
+}
+li div p{
+    border-bottom: 1px solid black;
+}
+li div span{
+   font-weight: 900;
+}
+li #delete{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0px;
+  padding: 2px; 
+  border-radius: 10px;
+  transition: all 0.3s;
+  font-size: 13px;
+}
+li #delete:hover{
+   background:rgb(227, 154, 0.58);
+}
+li #fly{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0px;
+  padding: 2px; 
+  border-radius: 10px;
+  transition: all 0.3s;
+  font-size: 13px;
+}
+li #fly:hover{
+    background:rgb(227, 154, 0.58);
+}
